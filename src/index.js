@@ -1,13 +1,23 @@
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Hero from './component/hero';
+import Fasilitas from './component/fasilitas';
+import Profile from './component/Profile';
+import Kemitraan from './component/kemitraan';
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Hero />
+    <Fasilitas />
+    <Profile />
+    <Kemitraan />
   </React.StrictMode>
 );
 

@@ -1,38 +1,299 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+body {
+  /* background: #fdf0e9; */
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.hero {
+  height: 1000px;
+  flex-shrink: 0;
+  background: #28293e;
+}
+.navbar {
+  padding-top: 30px;
+}
+
+.navbar-head img {
+  width: 160px;
+}
+.navbar-head h1 {
+  color: var(--Text_Light, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* H4 */
+  font-family: Epilogue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+.nav-item a {
+  color: var(--Text_Light, #fff);
   text-align: center;
-}
+  font-feature-settings: "clig" off, "liga" off;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* Text */
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img {
+  /* width: 40rem; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#margin {
+  margin-left: 80px;
+}
+.nav-item a:hover {
+  color: #fdf0e9;
+}
+.btn-contact {
+  width: 138px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: Epilogue;
+  background-color: #28293e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 0.79px solid;
+}
+.btn:hover {
+  border: 1px solid white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+.navbar-toggler-icon {
+  color: white;
+}
+.title-content h1 {
+  color: var(--Text_Light_Accent, #ef6d58);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  letter-spacing: 3px;
+}
+.title-content h2 {
+  color: var(--Text_Light, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* H1 */
+  font-family: Epilogue;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px; /* 111.111% */
+  letter-spacing: -2px;
+  margin-top: 30px;
+}
+.title-content h3 {
+  color: var(--Text_Light_Gray, rgba(255, 255, 255, 0.64));
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Text */
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  margin-top: 30px;
+}
+.toggle-btn {
+  margin-top: 30px;
+}
+.work {
+  padding: 18px 20px;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  background: #ef6d58;
+}
+.contact {
+  color: var(--Text_Light, #ffffff);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Text */
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  margin-top: 8px;
+  margin-left: 46px;
+}
+.content {
+  margin-top: 7rem;
+}
+.icon {
+  margin-top: 5rem;
+}
+.said h1 {
+  color: var(--Text_Light_Gray, rgba(255, 255, 255, 0.64));
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Text */
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  margin-left: 20px;
+}
+.said p {
+  color: var(--Text_Light, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Text */
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  margin-left: 30px;
+  margin-top: -10px;
+}
+.float-card {
+  background-color: #ef6d58;
+  height: 227px;
+  margin-top: -100px;
+  border-radius: 10px;
+}
+.fasilitas {
+  padding: 40px;
+}
+.cover {
+  background-color: #ffffff67;
+  width: 310px;
+  height: 109px;
+  border-radius: 20px;
+  /* margin: auto; */
+}
+.cover img {
+  margin: auto;
+  margin-left: 27px;
+  margin-top: 30px;
+}
+.green-building {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.title {
+  color: #fff;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.desc {
+  margin-left: 30px;
+}
+#blue-area {
+  width: 217px;
+}
+/* Profile */
+.profile {
+  margin-top: 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-desc {
+  /* letter-spacing: 1px; */
+  font-size: 18px;
+  line-height: 30px;
+}
+.title-profile {
+  margin-bottom: 80px;
+}
+.title-profile p {
+  color: #28293e;
+  font-size: 40px;
+}
+.arrow {
+  width: 130px;
+  color: #ef6d58;
+  margin-top: -20px;
+  size: 200%;
+}
+.Kemitraan {
+  margin-top: 90px;
+}
+.mitra {
+  color: #28293e;
+  font-size: 40px;
+}
+#mitra-desc{
+  margin-top: 40px;
+}
+
+.slider-container {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
